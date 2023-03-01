@@ -183,4 +183,7 @@ input {
 	.emoji{
 		margin-right: 40px;
 	}
+	.search{
+		width: 94.5vw;
+	}
 }
