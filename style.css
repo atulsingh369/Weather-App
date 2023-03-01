@@ -16,7 +16,7 @@ html {
 }
 
 .img {
-  background-image: url("https://i.ibb.co/vvLrn7x/Weather-Desktop-Backgrounds.jpg");
+  background-image: url("https://i.ibb.co/zf10dL5/john-towner-Jg-Oe-Ru-GD-Y4-unsplash.jpg");
   max-width: 100vw;
   height: 100vh;
   background-repeat: no-repeat;
@@ -34,12 +34,13 @@ html {
 }
 
 .weather {
-	word-wrap: break-word;
+  word-wrap: break-word;
   position: absolute;
-  top: 50%;
-	width: 100%;
-	display: flex;
-	justify-content: center;
+  top: 35%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .search {
@@ -85,9 +86,9 @@ input {
 }
 
 .btn {
-	cursor: pointer;
-	color: rgb(7, 7, 86);
-	font-weight: 700;
+  cursor: pointer;
+  color: rgb(7, 7, 86);
+  font-weight: 700;
   background-color: rgba(207, 177, 5, 0.887);
   outline: none;
   font-size: 150%;
@@ -100,15 +101,54 @@ input {
   border-bottom: 1px solid rgba(255, 255, 255, 0.9);
 }
 
+#temp {
+  font-size: 400%;
+	display: flex;
+	align-items: flex-start;
+}
+
+#time {
+  font-size: 60%;
+	margin-top: 20px;
+}
+
+.place {
+  display: flex;
+  flex-direction: column;
+  font-size: 200%;
+	margin-right: 10px;
+}
+
+.deg{
+	margin-left: 5px;
+	font-size: 50%;
+	margin-right: 20px;
+}
+
+.emoji {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 160%;
+}
+
+#emjType{
+	margin-left: auto;
+	margin-top: 20px;
+}
+
 @media only screen and (max-width: 600px) {
-	input, .btn, .icon{
-		font-size: 110%;
-	}
-	input{
-		padding: 8px 10px;
-	}
-	.search{
-		border-top-left-radius: 5rem;
-  border-top-right-radius: 5rem;
-	}
+  input,
+  .btn,
+  .icon {
+    font-size: 110%;
+  }
+  input {
+    padding: 8px 10px;
+  }
+  .search {
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+		width: 96vw;
+  }
 }
