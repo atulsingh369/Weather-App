@@ -30,6 +30,14 @@ const fetchData = async () => {
 		});
 }
 
+input.onkeydown = function (e) {
+	if (e.keyCode == 13) {
+		target = input.value;
+		fetchData();
+		input.value = "";
+	}
+};
+
 const find = () => {
 	target = input.value;
 	fetchData();
